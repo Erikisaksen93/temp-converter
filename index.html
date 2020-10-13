@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Temperature converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+        <div class="header">
+            <h1>TEMPERATURE CONVERTER</h1>
+        </div>
+
+
+
+    <div class="index">
+        <div class="buttons">
+            <button id="kelvin" onclick="convertKel()">Kelvin</button>
+            <button id="fahrenheit" onclick="convertFahr()">Fahrenheit</button>
+            <button id="newton" onclick="convertNew()">Newton</button>
+            <button id="clear_all" onclick="clearAll()">Clear</button>
+        </div>
+    
+
+        <div class="input">
+            <label for="number">Insert &#xb0;C you want to convert below:</label><br/>
+            <input onchange="getData()" type="text" id="text_input" name="number">
+        </div>
+            <p id="text_output"></p>
+
+    <div class="footer">
+        <p>Created by Erik Isaksen&copy;</p>
+    </div>
+    </div>
